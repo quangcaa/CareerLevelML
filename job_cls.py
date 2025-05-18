@@ -21,7 +21,7 @@ def filter_location(location):
         return location
 
 
-data = pd.read_excel("final_project.ods", engine="odf", dtype=str)
+data = pd.read_excel("data/final_project.ods", engine="odf", dtype=str)
 data = data.dropna(axis=0)
 data["location"] = data["location"].apply(filter_location)
 
